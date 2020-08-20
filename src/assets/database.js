@@ -12,19 +12,21 @@ export default [{
         "commentText": "Для ровных пропилов он не годится, пилка стоит криво.",
         "commentPositives": "Лучше чем ничего.",
         "commentNegatives": "Даже его низкая цена не стоит его качества."
-      },
-      {
-        "commentAutorName": "Петр Петрович",
-        "commentDate": "2020-02-23T01:12:01.000Z",
-        "commentText": "С задачей по укладке ламината справился на отлично.",
-        "commentPositives": "Не ведёт не косит.",
-        "commentNegatives": "Пойдет."
-      }]
+      }
+      ,
+      // {
+      //   "commentAutorName": "Петр Петрович",
+      //   "commentDate": "2020-02-23T01:12:01.000Z",
+      //   "commentText": "С задачей по укладке ламината справился на отлично.",
+      //   "commentPositives": "Не ведёт не косит.",
+      //   "commentNegatives": "Пойдет."
+      // }
+    ]
   },
   {
     "id": "art9871548",
     "toolName": "Рубанок электрический Electric planer",
-    "img": "img/jigsaw.jpg",
+    "img": "img/planer.jpg",
     "toolText": "Рубанок электрический — простой удобный электроинструмент для решения различных хозяйственных задач — строгания досок и бруса.",
     // "availability": true,
     "quantity": 5,
@@ -35,19 +37,21 @@ export default [{
         "commentText": "Рубанком доволен, есть регулировка глубины. Отстругал с лёгкостью 5 досок шестиметровых со всех сторон.",
         "commentPositives": "Недорогой.",
         "commentNegatives": "Пока что не нашел."
-      },
-      {
-        "commentAutorName": "Фекла Ивановна",
-        "commentDate": "2020-04-01T05:12:01.000Z",
-        "commentText": "Сначала планировал взять рубанок в аренду на пару дней, но оказалось что это дороже чем купить одноразовый новый.",
-        "commentPositives": "Цена. Небольшой вес.",
-        "commentNegatives": "Ножи сточились через день работы."
-      }]
+      }
+      ,
+      // {
+      //   "commentAutorName": "Фекла Ивановна",
+      //   "commentDate": "2020-04-01T05:12:01.000Z",
+      //   "commentText": "Сначала планировал взять рубанок в аренду на пару дней, но оказалось что это дороже чем купить одноразовый новый.",
+      //   "commentPositives": "Цена. Небольшой вес.",
+      //   "commentNegatives": "Ножи сточились через день работы."
+      // }
+    ]
   },
   {
     "id": "art7894561",
     "toolName": "Эксцентриковая шлифмашина Eccentric sander",
-    "img": "img/jigsaw.jpg",
+    "img": "img/sander.jpg",
     "toolText": "Этот инструмент предназначен для шлифования дерева, окрашенных поверхностей, мягкой  пластмассы  и  металла.",
     // "availability": false,
     "quantity": 0,
@@ -70,7 +74,7 @@ export default [{
   {
     "id": "art1592630",
     "toolName": "Машина углошлифовальная Angle grinder",
-    "img": "img/jigsaw.jpg",
+    "img": "img/grinder.jpg",
     "toolText": "Подходит для шлифования, очистки и резки различных материалов: дерева, кафеля, камня, кирпича, толстого пластика и металла.",
     // "availability": false,
     "quantity": 0,
@@ -93,7 +97,7 @@ export default [{
   {
     "id": "art0258741",
     "toolName": "Фрезер Fraser",
-    "img": "img/jigsaw.jpg",
+    "img": "img/fraser.jpg",
     "toolText": "Фрезер — удобный станок средней мощности для обработки древесины, пластика, цветных металлов, гипсокартона.",
     // "availability": true,
     "quantity": 4,
