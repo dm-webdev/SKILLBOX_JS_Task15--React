@@ -1,15 +1,21 @@
-import React from 'react';
-import './ToolList.css';
-import {ToolItem} from './ToolItem/ToolItem';
+import React from "react";
+import "./ToolList.css";
+import { ToolItem } from "./ToolItem/ToolItem";
 
-function ToolList(props) {
-  return (
-    <ul className="tool-list">
-      {props.catalog.map(toolItem => {
-        return <ToolItem catalog={toolItem} key={toolItem.id} />
-        })}   
-    </ul>
-  )
-};
+class ToolList extends React.Component {
+  // constructor(props) {
+  //   super(props);
+  // }
 
-export {ToolList};
+  render() {
+    return (
+      <ul className="tool-list">
+        {this.props.catalog.map((toolItem) => {
+          return <ToolItem catalog={toolItem} key={toolItem.id} />;
+        })}
+      </ul>
+    );
+  }
+}
+
+export { ToolList };

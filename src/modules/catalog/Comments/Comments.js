@@ -3,16 +3,19 @@ import './Comments.css';
 import {CommentRecorder} from './CommentRecorder/CommentRecorder';
 import {CommentsList} from './CommentsList/CommentsList';
 
-function Comments(toolItem) {
-  return (
-    <section className="comments">
-      <h2 className="сomments__header">отзывы</h2>
+class Comments extends React.Component {
 
-      <CommentRecorder comments={toolItem}/>
-
-      <CommentsList comments={toolItem}/>
-    </section>
-  )
-};
+  render() {
+    return (
+      <section className="comments">
+        <h2 className="сomments__header">отзывы</h2>
+  
+        <CommentRecorder comments={this.props}/>
+  
+        <CommentsList comments={this.props}/>
+      </section>
+    )
+  }
+}
 
 export {Comments};
