@@ -1,0 +1,41 @@
+.comment-recorder {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 5%;
+  border-top: 1px solid #37474f;
+  border-bottom: 1px solid #37474f;
+}
+
+.recorder__header {
+  margin-top: 0;
+  text-align: center;
+  text-transform: lowercase;
+  color: #ffe57f;
+}
+
+.recorder__label {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 15px;
+  font-size: calc(10px + 1vw);
+}
+
+.recorder__input {
+  margin-top: 5px;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: calc(8px + 1vw);
+  color: #CECECE;
+  background: #37474f;
+}
+
+.recorder__input::placeholder {
+  color: #CACACA;
+}
+
+.recorder__btn {
+  align-self: center;
+  max-width: 60%;
+}

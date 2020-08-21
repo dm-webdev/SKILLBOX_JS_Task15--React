@@ -1,0 +1,13 @@
+.comments {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #929ba0;
+}
+
+.сomments__header {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: calc(16px + 1.5vw);
+  text-align: center;
+  color: #76ff03;
+}
