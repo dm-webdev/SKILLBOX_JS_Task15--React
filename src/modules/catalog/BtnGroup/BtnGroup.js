@@ -14,7 +14,7 @@ class BtnGroup extends React.Component {
   }
 
   render() {
-    console.log(this.props);
+    // console.log(this.props);
     return (
       <div className="btn-group">
         <button className="btn" type="button" onClick={this.showComments}>
@@ -45,7 +45,7 @@ class BtnGroup extends React.Component {
                 закрыть
               </button>
             </div>
-          </div>
+          </div>          
         )}
       </div>
     );

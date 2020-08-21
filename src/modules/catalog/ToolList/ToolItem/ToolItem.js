@@ -7,7 +7,6 @@ import { BtnGroup } from "../../BtnGroup/BtnGroup";
 class ToolItem extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props);
     this.state = { isShowComments: false };
     this.showComments = this.showComments.bind(this);
   }

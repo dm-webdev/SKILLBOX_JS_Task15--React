@@ -10,7 +10,7 @@ class Comments extends React.Component {
 
 
   render() {
-    console.log(this.props.isShowComments.isShowComments)
+    // console.log(this.props.isShowComments.isShowComments)
     return (
       (this.props.isShowComments.isShowComments) ? (
       <section className="comments">
