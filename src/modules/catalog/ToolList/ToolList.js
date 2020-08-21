@@ -5,7 +5,7 @@ import {ToolItem} from './ToolItem/ToolItem';
 function ToolList(props) {
   return (
     <ul className="tool-list">
-      {props.catalog.map(toolItem => { console.log(toolItem.id)
+      {props.catalog.map(toolItem => {
         return <ToolItem catalog={toolItem} key={toolItem.id} />
         })}   
     </ul>
