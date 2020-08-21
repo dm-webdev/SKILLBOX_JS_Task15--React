@@ -4,8 +4,7 @@ import {CommentItem} from '../CommentItem/CommentItem';
 
 
 class CommentsList extends React.Component {
-
-  render() {
+    render() {
     const comments = this.props.comments.toolItem.catalog.toolComment;
     return (
 

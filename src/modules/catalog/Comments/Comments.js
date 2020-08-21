@@ -5,8 +5,14 @@ import {CommentsList} from './CommentsList/CommentsList';
 
 class Comments extends React.Component {
 
+
+
+
+
   render() {
+    console.log(this.props.isShowComments.isShowComments)
     return (
+      (this.props.isShowComments.isShowComments) ? (
       <section className="comments">
         <h2 className="сomments__header">отзывы</h2>
   
@@ -14,6 +20,7 @@ class Comments extends React.Component {
   
         <CommentsList comments={this.props}/>
       </section>
+    ) : null
     )
   }
 }
