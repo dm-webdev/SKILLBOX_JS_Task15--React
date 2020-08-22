@@ -9,10 +9,11 @@ class ToolList extends React.Component {
   constructor(props) {
     super(props);
     this.state = { catalog };
-    this.showId = this.showId.bind(this);
+    this.removeComment = this.removeComment.bind(this);
+    this.addComment = this.addComment.bind(this);
   }
 
-  showId(index, key) {
+  removeComment(index, key) {
     let filter = this.state.catalog[index].toolComment.indexOf(
       this.state.catalog[index].toolComment.find(
         (item) => item.commentDate === key
@@ -29,9 +30,14 @@ class ToolList extends React.Component {
     });
   }
 
-  render() {
-    console.log(this.state);
+  addComment(index, comment) {
+    let replCatalog = this.state.catalog[index].toolComment.push(comment);
+    this.setState(() => {
+      return { removeId: replCatalog };
+    });
+  }
 
+  render() {
     return (
       <ul className="tool-list">
         {this.state.catalog.map((toolItem, index) => {
@@ -40,7 +46,8 @@ class ToolList extends React.Component {
               catalog={toolItem}
               key={toolItem.id}
               index={index}
-              showId={this.showId}
+              showId={this.removeComment}
+              addComment={this.addComment}
             />
           );
         })}

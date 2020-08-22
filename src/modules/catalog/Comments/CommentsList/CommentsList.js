@@ -9,8 +9,7 @@ class CommentsList extends React.Component {
 
     return (
       <ul className="comment-list">
-
-        {this.props.comments.toolItem.catalog.toolComment == 0 ? (
+        {this.props.comments.toolItem.catalog.toolComment.length === 0 ? (
           <p className="message">К сожалению, отзывы отсутствуют</p>
         ) : (
           ""
