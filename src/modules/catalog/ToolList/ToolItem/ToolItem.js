@@ -17,12 +17,23 @@ class ToolItem extends React.Component {
     });
   }
 
+
+
+
+
+
+
   render() {
+    // console.log(this.state)
+    // console.log(this.props)
     return (
       <li className="tool-item">
         <ToolCard toolItem={this.props} />
 
-        <Comments toolItem={this.props} isShowComments={this.state} />
+        <Comments 
+          toolItem={this.props} 
+          isShowComments={this.state}
+          />
 
         <BtnGroup
           toolItem={this.props}

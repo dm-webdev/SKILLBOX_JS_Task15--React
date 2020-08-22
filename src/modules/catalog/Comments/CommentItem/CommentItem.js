@@ -10,17 +10,37 @@ class CommentItem extends React.Component {
   }
 
   deactivation() {
-// console.log(this.state);
+// console.log(this.props.removeComment);
+// console.log(this.props.removeComment.comments.toolItem.showId);
+// console.log(this.props.removeComment.comments.toolItem.index);
+this.props.removeComment.comments.toolItem.showId(this.props.removeComment.comments.toolItem.index, this.props.commentItem.commentDate)
+
+
+
+
+// this.props.removeComment(this.props.commentItem.commentDate);
+// this.props.removeComment
 // this.setState({ active: false })
 
     // console.log(!this.props.removeComment.remove);
-    this.props.activity()
+    // this.props.activity()
 
     // this.props.commentItem.activity = !this.props.commentItem.activity;
     // this.props.remComment();
+
+
+    // const comments = this.props.comments.toolItem.catalog.toolComment;
+
+    //   console.log(this.props);
+    //   console.log(this.state);
+      
+    
+
+
   }
 
   render() {
+    console.log(this.props)
 
     return (
       <li className="comment-item">
