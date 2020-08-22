@@ -4,9 +4,20 @@ import bd from "../../assets/database";
 import {ToolList} from './ToolList/ToolList';
 // import { render } from '@testing-library/react';
 
-const catalog = bd;
 
+const catalog = bd;
 class Catalog extends React.Component {
+  
+  // constructor(props) {
+  //   super(props);
+  //   this.state = { catalog };
+  // }
+
+
+
+
+
+
   render() {
     return (
       <section className="catalog">
