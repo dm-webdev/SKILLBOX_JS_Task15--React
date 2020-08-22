@@ -3,3 +3,10 @@
   margin: 0;
   padding: 5% 0;
 }
+
+.message {
+  font-size: calc(10px + 1vw);
+  font-weight: 600;
+  text-align: center;
+  color: #00ff0d;
+}

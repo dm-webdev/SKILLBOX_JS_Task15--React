@@ -17,12 +17,6 @@ class ToolItem extends React.Component {
     });
   }
 
-
-
-
-
-
-
   render() {
     // console.log(this.state)
     // console.log(this.props)

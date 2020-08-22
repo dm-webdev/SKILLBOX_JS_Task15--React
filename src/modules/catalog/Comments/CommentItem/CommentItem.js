@@ -42,10 +42,11 @@ this.props.removeComment.comments.toolItem.showId(this.props.removeComment.comme
   render() {
     console.log(this.props)
 
+
     return (
       <li className="comment-item">
         <p className="comment__text comment__autor">
-          {this.props.commentItem.commentAutorName}
+          {this.props.commentItem.commentAutorName}          
           <span>
             {new Date(this.props.commentItem.commentDate).toLocaleString()}
           </span>
