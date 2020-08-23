@@ -3,7 +3,15 @@ import "./ToolList.css";
 import bd from "../../../assets/database";
 import { ToolItem } from "./ToolItem/ToolItem";
 
-const catalog = bd;
+let catalog;
+if (localStorage.getItem("database") !== null) {
+  let lsDB = localStorage.getItem("database");
+  lsDB = JSON.parse(localStorage.getItem("database"));
+  lsDB = Array.from(lsDB["catalog"]);
+  catalog = lsDB;
+} else {
+  catalog = bd;
+}
 
 class ToolList extends React.Component {
   constructor(props) {
@@ -38,6 +46,8 @@ class ToolList extends React.Component {
   }
 
   render() {
+    localStorage.setItem("database", JSON.stringify(this.state));
+
     return (
       <ul className="tool-list">
         {this.state.catalog.map((toolItem, index) => {
