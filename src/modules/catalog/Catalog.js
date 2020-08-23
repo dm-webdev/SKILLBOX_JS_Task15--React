@@ -1,5 +1,5 @@
 import React from "react";
-import "./Catalog.css";
+import "./catalog.css";
 import {ToolList} from './ToolList/ToolList';
 // import { render } from '@testing-library/react';
 
