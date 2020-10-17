@@ -14,7 +14,6 @@ class CommentsList extends React.Component {
         ) : (
           ""
         )}
-
         {comments.map((commentItem) => {
           return (
             <CommentItem
